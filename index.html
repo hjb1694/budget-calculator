@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable:yes"/>
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge"/>
+        <meta name="author" content="Hayden Bradfield"/>
+        <title>Budget App</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" media="screen"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <form class="input-form" autocomplete="off">
+            <input type="text" id="description" class="input-fields" placeholder="description" maxlength="50"/>
+            <input type="number" id="amount" class="input-fields" placeholder="amount"/>
+            <select id="type" class="input-fields">
+                <option value="">-- type --</option>
+                <option value="inc">Income</option>
+                <option value="exp">Expense</option>
+            </select>
+            <button type="submit" id="subbut">add</button>
+        </form>
+        <section class="totals_container">
+            <div class="income_total_box">
+                <p>income total</p>
+                <p class="income_total">$0</p>
+            </div>
+            <div class="overall_total_box">
+                <p>overall total</p>
+                <p class="overall_total">$0</p>
+            </div>
+            <div class="expense_total_box">
+                <p>expense total</p>
+                <p class="expense_total">$0</p>
+            </div>
+        </section>
+        <section class="list_container">
+            <div class="income_list_container">
+                <h2>income list</h2>
+                <div class="income_list">
+                </div>
+            </div>
+            <div class="expense_list_container">
+                <h2>expense list</h2>
+                <div class="expense_list">
+                </div>
+            </div>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
